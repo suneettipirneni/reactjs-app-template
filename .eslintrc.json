@@ -20,6 +20,15 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }]
+        "react/jsx-filename-extension": [2, { "extensions": [".tsx", ".ts"] }],
+        "react/destructuring-assignment": [2, "always"],
+        "react/jsx-wrap-multilines": [2, {
+            "return": "parens"
+        }],
+        "react/jsx-closing-bracket-location": 2,
+        "react/self-closing-comp": ["error", {
+            "component": true,
+            "html": true
+        }]
     }
 }
